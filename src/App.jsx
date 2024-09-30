@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import Header from './components/Header/header'
+import Header from './components/Header/Header'
 import Home from './pages/Home/Home'
 import Bingo from './pages/Bingo/Bingo'
 import TresEnRaya from './pages/TresEnRaya/TresEnRaya'
