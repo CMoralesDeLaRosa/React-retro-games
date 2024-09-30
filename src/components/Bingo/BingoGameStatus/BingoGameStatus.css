@@ -1,0 +1,65 @@
+.game-status-win {
+  position: fixed;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background-color: var(--rg-second-bg 0.9);
+  color: var(--rg-second-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+  -webkit-box-shadow: -1px 0px 6px 2px var(--rg-shw-neon3);
+  -moz-box-shadow: -1px 0px 6px 2px var(--rg-shw-neon3);
+  box-shadow: -1px 0px 6px 2px var(--rg-shw-neon3);
+  gap: 20px;
+}
+.game-status-win,
+.game-status-lost h3 {
+  margin-bottom: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--rg-secondary-text);
+  font-weight: 400;
+  font-size: 15px;
+}
+.game-status-lost {
+  position: fixed;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background-color: var(--rg-second-bg 0.9);
+  color: var(--rg-second-bg);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+  -webkit-box-shadow: -1px 0px 6px 2px var(--rg-shw-neon4);
+  -moz-box-shadow: -1px 0px 6px 2px var(--rg-shw-neon4);
+  box-shadow: -1px 0px 6px 2px var(--rg-shw-neon4);
+  gap: 10px;
+}
+
+/*MediaQueries*/
+@media (max-width: 680px) {
+  .game-status-lost {
+    width: 300px;
+    height: 120px;
+  }
+  .game-status-win {
+    width: 300px;
+    height: 120px;
+  }
+  .game-status-win,
+  .game-status-lost h3 {
+    color: var(--rg-secondary-text);
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,26 @@
+#section-bingo {
+  height: 700px;
+  width: 100%;
+  padding: var(--rg-padding-xl) var(--rg-padding-section);
+  background-color: var(--rg-first-bg);
+  gap: 100px;
+}
+
+/*MediaQueries*/
+@media (max-width: 1189px) {
+  #section-bingo {
+    gap: 40px;
+  }
+}
+@media (max-width: 1130px) {
+  #section-bingo {
+    gap: 20px;
+    height: 740px;
+  }
+}
+@media (max-width: 950px) {
+  #section-bingo {
+    gap: 20px;
+    height: 750px;
+  }
+}

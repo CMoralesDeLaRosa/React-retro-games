@@ -1,0 +1,112 @@
+.article-bingo-roulette {
+  width: 500px;
+  height: 550px;
+  flex-direction: column;
+  gap: 60px;
+}
+.div-bingo-circle {
+  width: 420px;
+  height: 420px;
+  border-radius: 100%;
+  -webkit-box-shadow: -1px 0px 16px 2px var(--rg-shw-neon1);
+  -moz-box-shadow: -1px 0px 16px 2px var(--rg-shw-neon1);
+  box-shadow: -1px 0px 16px 2px var(--rg-shw-neon1);
+  border: 2px solid var(--rg-b-neon1);
+  transition: background-color 0.5s ease;
+}
+.div-bingo-circle.active {
+  -webkit-box-shadow: -1px 0px 16px 2px var(--rg-shw-neon2);
+  -moz-box-shadow: -1px 0px 16px 2px var(--rg-shw-neon2);
+  box-shadow: -1px 0px 16px 2px var(--rg-shw-neon2);
+}
+.current-number {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: var(--rg-primary-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-shadow: 0 0 20px var(--rg-shw-neon1);
+}
+.div-roulette-buttons {
+  width: 400px;
+  height: 50px;
+  gap: 50px;
+}
+.div-countDown-timer {
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border-radius: 5px;
+  text-shadow: 0 0 20px var(--rg-color4);
+  text-transform: uppercase;
+  border-radius: 100px;
+  -webkit-box-shadow: -1px 0px 16px 2px var(--rg-shw-neon1);
+  -moz-box-shadow: -1px 0px 16px 2px var(--rg-shw-neon1);
+  box-shadow: -1px 0px 16px 2px var(--rg-shw-neon1);
+  border: 1px solid var(--rg-b-neon1);
+  color: var(--rg-b-neon1);
+  text-shadow: 0 0 20px var(--rg-shw-neon1);
+}
+
+/*MediaQueries*/
+@media (max-width: 1189px) {
+  .article-bingo-roulette {
+    width: 350px;
+    height: 450px;
+    gap: 40px;
+  }
+  .div-bingo-circle {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 1130px) {
+  .article-bingo-roulette {
+    width: 400px;
+    height: 170px;
+    gap: 30px;
+  }
+  .div-bingo-circle {
+    width: 150px;
+    height: 150px;
+  }
+  .div-roulette-buttons {
+    width: 200px;
+    height: 150px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .div-countDown-timer {
+    width: 120px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 680px) {
+  .article-bingo-roulette {
+    width: 350px;
+    height: 150px;
+    gap: 30px;
+  }
+  .div-bingo-circle {
+    width: 120px;
+    height: 120px;
+  }
+  .current-number {
+    font-size: 22px;
+  }
+  .div-roulette-buttons {
+    width: 150px;
+    height: 120px;
+    gap: 20px;
+  }
+  .div-countDown-timer {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
