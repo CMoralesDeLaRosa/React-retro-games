@@ -53,7 +53,8 @@
 }
 
 /*MediaQueries*/
-@media (max-width: 1189px) {
+
+@media (max-width: 1440px) {
   .article-bingo-roulette {
     width: 350px;
     height: 450px;
@@ -110,3 +111,4 @@
     font-size: 12px;
   }
 }
+
