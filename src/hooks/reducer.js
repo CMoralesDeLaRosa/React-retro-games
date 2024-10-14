@@ -13,7 +13,7 @@ export const ACTIONS = {
   RESET_GAME: 'RESET_GAME'
 }
 
-export const useTresEnRayaReducer = (state, action) => {
+export const reducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.USER_MOVE:
       if (!state.isUserTurn || state.selected[action.index] || state.gameOver) {
