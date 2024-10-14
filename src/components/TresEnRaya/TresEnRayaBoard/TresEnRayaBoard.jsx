@@ -1,16 +1,12 @@
 import './TresEnRayaBoard.css'
 import { useReducer } from 'react'
-import {
-  ACTIONS,
-  initialState,
-  useTresEnRayaReducer
-} from '../../../hooks/useTresEnRayaReducer'
+import { ACTIONS, initialState, reducer } from '../../../hooks/reducer'
 import Button from '../../Button/Button'
 import HandleWinnerTer from '../HandleWinnerTer'
 import HandleClickTer from '../HandleClickTer'
 
 const TresEnRayaBoard = ({ onScoreUpdate }) => {
-  const [state, dispatch] = useReducer(useTresEnRayaReducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   const handleClick = (index) => {
     dispatch({ type: ACTIONS.USER_MOVE, index })
