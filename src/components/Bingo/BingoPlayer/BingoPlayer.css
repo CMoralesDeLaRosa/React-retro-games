@@ -78,7 +78,7 @@
 }
 
 /*MediaQueries*/
-@media (max-width: 1189px) {
+@media (max-width: 1440px) {
   .article-bingo-player {
     width: 540px;
     height: 420px;
@@ -182,3 +182,4 @@
     height: 20px;
   }
 }
+
